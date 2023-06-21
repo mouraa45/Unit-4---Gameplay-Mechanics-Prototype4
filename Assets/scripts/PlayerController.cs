@@ -87,7 +87,13 @@ public class PlayerController : MonoBehaviour
 			
 		}
 		
-		void LaunchRockets()
+		
+
+		
+	}
+	
+	
+	void LaunchRockets()
 		{
 			foreach(var enemy in FindObjectsOfType<Enemy>())
 			{
@@ -96,7 +102,4 @@ public class PlayerController : MonoBehaviour
 				tmpRocket.GetComponent<RocketBehaviour>().Fire(enemy.transform);
 			}
 		}
-
-		
-	}
 }
